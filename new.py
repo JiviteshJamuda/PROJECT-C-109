@@ -13,6 +13,11 @@ median = statistics.median(data)
 mode = statistics.mode(data)
 deviation = statistics.stdev(data)
 
+print("mean : " + str(mean))
+print("median : " + str(median))
+print("mode : " + str(mode))
+print("standard deviation : " + str(deviation))
+
 first_sd_start,first_sd_end = mean-deviation, mean+deviation
 second_sd_start, second_sd_end = mean-(2*deviation), mean+(2*deviation)
 third_sd_start, third_sd_end = mean-(3*deviation), mean+(3*deviation)
